@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Buddy ("Pig") — Our Black Lab</title>
+<meta name="description" content="A loving tribute to Buddy (“Pig”), our sweet black lab who fills our lives with walks, beaches, woods, and endless smiles." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Decorative paw prints background overlay -->
+<div class="paw-overlay" aria-hidden="true"></div>
+
+
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="#home" aria-label="Buddy Pig Home">
+<span class="logo-mark">🐾</span>
+<span class="logo-text">Buddy <small>("Pig")</small></span>
+</a>
+
+
+<!-- Search -->
+<form class="site-search" role="search" aria-label="Search Buddy page" onsubmit="event.preventDefault();">
+<input id="q" type="search" placeholder="Search gallery & personality…" aria-label="Search" />
+<button type="button" class="btn soft" onclick="runSearch()">Search</button>
+<button type="button" class="btn ghost" onclick="clearSearch()" aria-label="Clear search">Clear</button>
+</form>
+
+
+<!-- Hamburger (CSS-only toggle) -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu" />
+<label for="nav-toggle" class="hamburger" aria-hidden="true">
+<span></span><span></span><span></span>
+</label>
+
+
+<nav class="main-nav" aria-label="Primary">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#personality">Personality</a></li>
+<li><a href="#footer">Contact</a></li>
+</ul>
+</nav>
+</div>
+
+
+<!-- Sub-navigation (second way to navigate) -->
+<div class="subnav" aria-label="Section shortcuts">
+<div class="container">
+<a href="#walks" class="chip">Walks</a>
+<a href="#beach" class="chip">Beach</a>
+<a href="#woods" class="chip">Woods</a>
+<a href="#memories" class="chip">Memories</a>
+</div>
+</div>
+</header>
+
+
+<main id="home" class="site-main">
+<!-- HERO -->
+<section class="hero container" aria-label="Hero about Buddy Pig">
+<div class="hero-content">
+<h1>Buddy <span class="aka">“Pig”</span></h1>
+<p class="lead">Our sweetest decision ever. Two years of adventures, oinks of joy, and a whole lot of love.</p>
+<div class="cta-group">
+<a href="#about" class="btn primary">Meet Buddy</a>
+<a href="#gallery" class="btn soft">See Photos</a>
+</div>
+</div>
+<figure class="hero-media rounded">
+<!-- Replace the src values with your real images -->
+<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop" alt="Buddy the black lab smiling" />
+</figure>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="section container" aria-labelledby="about-title">
+<h2 id="about-title">About Buddy</h2>
+<p class="intro">Buddy is our best friend and a constant in every memory we’ve made the last two years. He keeps us active with daily walks, joins every vacation, and reminds us what unconditional love looks like—especially through the tough times when he’s been sick. He’s sweet to everyone, and he makes people smile wherever he goes.</p>
+
+
+<div class="about-grid">
+<article class="card rounded">
+<h3>Meaningful to Us</h3>
+<p>Our lives revolve around Buddy—making memories, planning adventures, and (let’s be honest) spoiling him. He’s the heart of our home.</p>
+</article>
+<article class="card rounded">
+<h3>Why “Pig”?</h3>
+<p>His nickname isn’t about size—it’s the cute little <em>oinks</em> he makes when he gets excited. When he’s happy, he snorts like a piglet.</p>
+</article>
+</html>
